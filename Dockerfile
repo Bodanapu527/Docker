@@ -19,13 +19,13 @@ ENV ENVIRONMENT=$APP_ENV
 WORKDIR /usr/src/app
 
 # Copy requirements file (COPY)
-COPY requirements.txt .
+#COPY requirements.txt .
 
 # Install dependencies (RUN)
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Add source code (ADD supports archive extraction)
-ADD src/ ./src/
+#ADD src/ ./src/
 
 # Create a non-root user (RUN + USER)
 RUN useradd -ms /bin/bash appuser
